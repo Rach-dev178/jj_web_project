@@ -1,0 +1,17 @@
+@import "animetions.css";
+@import "main_main.css";
+@import "cotd.css";
+
+@import "pages/chopin.css";
+
+#index{
+    background-color: rgb(250, 250, 250);
+    height: 150vh;
+    
+    display: flex;
+
+    flex-direction: column;
+
+    padding-left: 100px;
+    padding-right: 100px;
+}

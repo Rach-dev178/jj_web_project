@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composer of the Day - Liszt</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="composer">
+    <div class="composer__imgbox">
+        <img class="composer__imgbox__img" src="img/Liszt.jpg" alt="">
+        <div class="composer__imgbox__content">
+            <span>Liszt</span>
+            <p> 
+                역사상 최고로 꼽히는 피아니스트로서 리스트는 낭만주의 음악사에서 쇼팽과 함께 피아노 음악의 역사 전반으로 가장 지대한 영향을 미쳤으며, 리하르트 바그너와 함께 19세기 서양음악 전반에서도 빼놓을 수 없는 양대산맥격의 인물이다. 바그너 외에도 로베르트 슈만, 프레데리크 쇼팽, 펠릭스 멘델스존, 요하네스 브람스, 샤를 발랑탱 알캉, 지기스문트 탈베르크, 아메데 메로 등 여러 작곡가들과도 많은 교류를 했으며, 그중 쇼팽과의 인연이 뜻깊었다. 요절한 동년배의 천재 음악가들과 달리 별다른 잔병치레도 없이 대단히 건강하게 장수해서 음악계에 나름의 족적을 남긴 동기들 중에서도 몇 안되게 초, 중, 후기 낭만파 일대를 전부 풍미할 수 있었던 음악가이기도 하다. 그리고 라흐마니노프, 스크랴빈, 고도프스키, 부소니, 프로코피예프 등에게도 큰 영향을 끼쳐 사실상 리스트 이후에 등장한 모든 피아니스트들은 리스트의 영향을 받았다. 또한 에스테 장의 분수나 Two Legends 등의 곡들을 작곡하여 인상주의 음악을 시작시켜 후배 작곡가들인 클로드 드뷔시와 모리스 라벨에게 큰 영향을 미치기도 했다. 그리고 후기에 무조성의 음악을 작곡하는 등 새로운 실험적인 곡들을 작곡하여 그가 서양 음악계, 나아가서 전 세계적으로 음악계에 남긴 직간접적인 영향력 역시 대단하다.
+            </p>
+        </div>
+    </div>
+    
+    <div class="discs">
+        <a class="discs_d" href="https://www.youtube.com/watch?v=KJbg9V2KnD8" target="_blank" rel="noopener">
+            <img class="discs_d__img" src="img/Liszt1.webp" alt="">
+        </a>
+        <a class="discs_d" href="https://www.youtube.com/watch?v=-O8WEF__Mu8" target="_blank" rel="noopener">
+            <img class="discs_d__img" src="img/Liszt2.jpeg" alt="">
+        </a>
+        <a class="discs_d" href="https://www.youtube.com/watch?v=KB59i99Wxc4" target="_blank" rel="noopener">
+            <img class="discs_d__img" src="img/Liszt3.webp" alt="">
+        </a>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll('.discs_d');
+
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+            card.classList.remove('main_main__box__drop');
+            card.classList.add('main_main__box__lift');
+            });
+
+            card.addEventListener('mouseleave', () => {
+            card.classList.remove('main_main__box__lift');
+            card.classList.add('main_main__box__drop');
+            });
+        });
+    </script>
+</body>
+</html>

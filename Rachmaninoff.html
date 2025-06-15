@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composer of the Day - Rachmaninoff</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="composer">
+    <div class="composer__imgbox">
+        <img class="composer__imgbox__img" src="img/Rachmaninoff.webp" alt="">
+        <div class="composer__imgbox__content">
+            <span>Rachmaninoff</span>
+            <p> 
+                러시아계 미국인 작곡가이자 피아니스트. 또한 전 세계의 피아니스트들이 뽑은 레코딩 시대의 가장 위대한 피아니스트이기도 하다. 후기 낭만파 경향과 고전음악 경향을 절충한 작품들을 만들었다.
+
+                1873년 4월 1일 러시아 제국 벨리키 노브고로드에서 출생하여 1943년 3월 28일 미국 캘리포니아 베벌리힐스에서 사망했다. 국민악파가 주를 이루던 시절에 활동한 후기 낭만파 음악가로, 페루초 부소니, 요제프 호프만과 함께 사실상 낭만주의의 마지막 세대였으며 현대 피아니스트의 정립에 상당히 공헌한 인물이다. 피아노 협주곡 4곡을 작곡한 것으로 유명하다. 또한 피아노 협주곡 이외의 곡도 다수 작곡했으며, 피아노 협주곡만큼 유명하지는 않지만, 피아노 협주곡에 가까운 〈파가니니 주제에 의한 광시곡〉이나 〈보칼리제〉 등의 곡도 광고 등에 흔히 등장하여 대중에게 널리 알려져 있다.
+            </p>
+        </div>
+    </div>
+    
+    <div class="discs">
+        <a class="discs_d" href="https://www.youtube.com/watch?v=S7yAbSgOImI" target="_blank" rel="noopener">
+            <img class="discs_d__img" src="img/Rachmaninoff1.webp" alt="">
+        </a>
+        <a class="discs_d" href="https://music.apple.com/us/album/volodos-live-at-carnegie-hall/262932327" target="_blank" rel="noopener">
+            <img class="discs_d__img" src="img/Rachmaninoff2.webp" alt="">
+        </a>
+        <a class="discs_d" href="https://music.apple.com/us/album/rachmaninov-piano-concerto-no-3/267536663" target="_blank" rel="noopener">
+            <img class="discs_d__img" src="img/Rachmaninoff3.webp" alt="">
+        </a>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll('.discs_d');
+
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+            card.classList.remove('main_main__box__drop');
+            card.classList.add('main_main__box__lift');
+            });
+
+            card.addEventListener('mouseleave', () => {
+            card.classList.remove('main_main__box__lift');
+            card.classList.add('main_main__box__drop');
+            });
+        });
+    </script>
+</body>
+</html>

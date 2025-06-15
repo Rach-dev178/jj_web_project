@@ -1,0 +1,36 @@
+.motd{
+    padding: 0px 100px 0px 100px;
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.motd span{
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.motd__main{
+    height: 450px;
+    margin-top: 20px;
+
+    display: flex;
+}
+.motd__main__box__img{
+    height: 400px;
+
+    border-radius: 30px;
+    border: 1px solid black;
+
+    animation: liftUpDown 3s ease infinite;
+    will-change: transform;
+}
+
+.motd__main__content{
+    margin-left: 100px;
+}
+
+.motd__main__content p{
+    font-size: 25px;
+
+    font-weight: 700;
+}

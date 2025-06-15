@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composer of the Day - chopin</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="composer">
+    <div class="composer__imgbox">
+        <img class="composer__imgbox__img" src="img/chopin.jpeg" alt="">
+        <div class="composer__imgbox__content">
+            <span>Chopin</span>
+            <p> 
+                피아노의 시인이라고 불리는 폴란드의 작곡가, 피아니스트, 독립운동가.
+                그는 낭만주의 클래식 음악사, 특히 피아노계에서 프란츠 리스트와 함께 최고의 업적을 이룩한 작곡가이다. 폴란드인이 자부심을 갖고 존경하는 폴란드 최고의 위인 중 한 명이기도 하다. 폴란드의 관문 바르샤바의 공항 이름도 바르샤바 쇼팽 공항이다. 그를 기념하기 위하여 1927년 만들어진 쇼팽 국제 피아노 콩쿠르도 폴란드 역대 대통령들의 중요한 공무이자 매년 국가지정 관광시즌으로 지정될 만큼 피아노 분야 최고 위상의 콩쿠르로 명망을 떨친다.
+            </p>
+        </div>
+    </div>
+    
+    <div class="discs">
+        <a class="discs_d" href="https://www.youtube.com/watch?v=i_RZZYztcwA" target="_blank" rel="noopener">
+            <img class="discs_d__img" src="img/chopin1.png" alt="">
+        </a>
+        <a class="discs_d" href="https://www.youtube.com/watch?v=weXwhsrJC8o&list=PLYy21-q2oyBuzeQimKsjqonnHym59jA0j" target="_blank" rel="noopener">
+            <img class="discs_d__img" src="img/chopin2.webp" alt="">
+        </a>
+        <a class="discs_d" href="https://www.youtube.com/watch?v=4_Ownitz8LU" target="_blank" rel="noopener">
+            <img class="discs_d__img" src="img/chopin3.webp" alt="">
+        </a>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll('.discs_d');
+
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+            card.classList.remove('main_main__box__drop');
+            card.classList.add('main_main__box__lift');
+            });
+
+            card.addEventListener('mouseleave', () => {
+            card.classList.remove('main_main__box__lift');
+            card.classList.add('main_main__box__drop');
+            });
+        });
+    </script>
+</body>
+</html>
